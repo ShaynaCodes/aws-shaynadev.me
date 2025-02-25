@@ -17,5 +17,5 @@ jobs:
       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
       AWS_ACCESS_KEY_ID: ${{ secerts.AWS_ACCESS_KEY_ID }}
       AWS_SECERT_ACCESS_KEY: ${{ secerts.AWS_SECRET_ACCESS_KEY}}
-      AWS_REGION: "us_east-1"
+      AWS_REGION: "us-east-1"
       SOURCE_DIR: "website"
