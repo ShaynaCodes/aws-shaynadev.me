@@ -12,7 +12,7 @@
 
 html{
     font-size: 65%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -47,6 +47,11 @@ header{
 
 .logo:hover{
     transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
 }
 
 nav a{
@@ -333,7 +338,8 @@ span{
 }
 
 @media(max-width:995px){
-    .home{
+    .home
+    {
         flex-direction: column;
         margin: 5rem 4rem;
     }
@@ -395,3 +401,39 @@ span{
 #contact{
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .home, .about, .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 80%;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.menu-close {
+    font-size: 2.5rem;
+    color: pink;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: none;
+}
+
